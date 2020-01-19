@@ -1,0 +1,19 @@
+{
+	"debugMode":1,
+	"showFPS":false,
+	"id":"canvas",
+	"engineDir":"../html5",
+	"modules":["cocos2d"],
+	"jsList":[
+		"lib/ui/UIJoystick.js",
+		
+		"src/global.js",
+		"src/plugin.js",
+		"src/request.js",
+
+		"src/conf/resource.js",
+
+		"src/view/SceneLogin.js",
+		"src/view/SceneGame.js"
+	]
+}
