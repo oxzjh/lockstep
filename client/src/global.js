@@ -68,3 +68,7 @@ cc.addClickListener = function(node, callback, scaleFactor) {
 	listener.setSwallowTouches(true);
 	return listener
 };
+
+cc.showToast = function(info) {
+	new ui.Toast(info)
+};

@@ -16,6 +16,7 @@ var (
 
 func init() {
 	jsonbuf.Reg("connect", connect)
+	jsonbuf.Reg("ping", ping)
 }
 
 func connect(socket server.ISocket, data map[string]interface{}) interface{} {
@@ -32,6 +33,10 @@ func connect(socket server.ISocket, data map[string]interface{}) interface{} {
 		game.NewGame(players)
 	}
 	return map[string]interface{}{}
+}
+
+func ping(socket server.ISocket, data map[string]interface{}) interface{} {
+	return map[string]interface{}{"ts": data["ts"]}
 }
 
 func Initialize(s server.IServer) {

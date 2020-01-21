@@ -1,3 +1,4 @@
+// socket for gate
 var request = {
 	dispatchErrorMethods:{},
 

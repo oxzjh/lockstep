@@ -5,14 +5,22 @@
 	"engineDir":"../html5",
 	"modules":["cocos2d"],
 	"jsList":[
+		"lib/buffer.js",
+		"lib/ui/UIToast.js",
 		"lib/ui/UIJoystick.js",
 		
 		"src/global.js",
 		"src/plugin.js",
+		"src/socket.js",
 		"src/request.js",
+
+		"src/data/GameData.js",
+		"src/data/FrameData.js",
+		"src/data/PacketData.js",
 
 		"src/conf/resource.js",
 
+		"src/view/Bullet.js",
 		"src/view/SceneLogin.js",
 		"src/view/SceneGame.js"
 	]

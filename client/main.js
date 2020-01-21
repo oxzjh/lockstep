@@ -16,5 +16,7 @@ cc.game.run(function() {
 	cc.winCenter = {x:cc.winSize.width*0.5, y:cc.winSize.height*0.5}
 	cc.director.setClearColor(cc.color(6, 13, 38));
 
-	cc.director.runScene(new SceneLogin())
+	cc.loader.load(g_resource.preload, function() {
+		cc.director.runScene(new SceneLogin())
+	})
 });
