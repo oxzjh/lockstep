@@ -6,6 +6,13 @@ var SceneLogin = cc.Scene.extend({
 		txt_info.setPosition(cc.winCenter)
 		this.addChild(txt_info)
 
+		var txt_name = new ui.Input(cc.size(200, 50), "", 24)
+		txt_name.x = cc.winCenter.x;
+		txt_name.y = cc.winCenter.y-100;
+		this.addChild(txt_name)
+
+		return;
+
 		var params = {};
 		if (window.location.search != "") {
 			var kvs = window.location.search.substr(1).split("&");

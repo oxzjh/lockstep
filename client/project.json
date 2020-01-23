@@ -6,6 +6,7 @@
 	"modules":["cocos2d"],
 	"jsList":[
 		"lib/buffer.js",
+		"lib/ui/UIInput.js",
 		"lib/ui/UIToast.js",
 		"lib/ui/UIJoystick.js",
 		
